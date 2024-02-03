@@ -43,11 +43,11 @@ main {
   gap: 40px;
 }
 
-.bag {
-  display: flex;
-
+footer {
+  margin: 10px;
+  padding: 40px;
 }
 
-footer {
-  
+footer > p {
+  display: flex;
 }
