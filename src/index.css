@@ -7,47 +7,18 @@ body, * {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav {
-  background-color: skyblue;
-  padding-top: 40px;
-  margin: 10px;
-  padding-bottom: 40px;
-}
-
-nav div{
+ul {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-}
-
-nav >div * {
-  flex-grow: 1;
-}
-
-nav > div ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav >div ul li {
-  text-decoration: none;
-  list-style: none;
-}
-
-main {
-  padding: 20px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
   gap: 40px;
+  background-color: antiquewhite;
 }
 
-footer {
-  margin: 10px;
-  padding: 40px;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-footer > p {
-  display: flex;
+li {
+  list-style: none;
 }
