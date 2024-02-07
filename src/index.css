@@ -22,3 +22,86 @@ a {
 li {
   list-style: none;
 }
+
+.calculator {
+  width: 380px;
+  margin: auto;
+}
+
+.screen {
+  height: 70px;
+  font-size: 50px;
+  color: black;
+  font-weight: bolder;
+  text-align: right;
+  padding: 20px;
+}
+
+.calculator button {
+  padding: 5px;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: rgb(135, 135, 135);
+  height: 80px;
+  border: none;
+  border-radius: 80px;
+}
+
+.calculator button:hover {
+  background-color: rgb(91, 91, 91);
+}
+
+.calculator .op {
+  background-color: orange;
+}
+
+.calculator .op:hover {
+  background-color: rgb(252, 230, 189);
+  color: orange;
+}
+
+.calculator .equal {
+  background-color: rgb(44, 223, 44);
+}
+
+.calculator .equal:hover {
+  background-color: rgb(44, 223, 44);
+}
+
+.calculator .back {
+  background-color: rgb(255, 83, 83);
+}
+.calculator .back:hover{
+  background-color: rgb(255, 62, 62)
+}
+
+.calculator .clear {
+  background-color: rgb(255, 69, 69);
+}
+
+.calculator .clear:hover {
+  background-color: red;
+}
+
+.key {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.equal {
+  grid-column: 4/ span 1;
+}
+
+.back {
+  grid-column: 4;
+}
+
+.clear {
+  grid-column: 3;
+}
