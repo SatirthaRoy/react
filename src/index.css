@@ -19,7 +19,7 @@ a {
   color: black;
 }
 
-li {
+ul li {
   list-style: none;
 }
 
@@ -42,14 +42,14 @@ li {
   color: white;
   font-size: 30px;
   font-weight: bolder;
-  background-color: rgb(135, 135, 135);
+  background-color: black;
   height: 80px;
   border: none;
   border-radius: 80px;
 }
 
 .calculator button:hover {
-  background-color: rgb(91, 91, 91);
+  background-color: rgb(93, 93, 93);
 }
 
 .calculator .op {
@@ -70,14 +70,14 @@ li {
 }
 
 .calculator .back {
-  background-color: rgb(255, 83, 83);
+  background-color: red;
 }
 .calculator .back:hover{
   background-color: rgb(255, 62, 62)
 }
 
 .calculator .clear {
-  background-color: rgb(255, 69, 69);
+  background-color: red;
 }
 
 .calculator .clear:hover {
@@ -104,4 +104,67 @@ li {
 
 .clear {
   grid-column: 3;
+}
+
+.list-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.input-field {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.list {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(1,.15fr) repeat(4,1fr);
+  margin-bottom: 20px;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  grid-column: 4;
+}
+
+.delete,.edit{
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background-color: rgb(255, 0, 0);
+}
+
+.edit {
+  background-color: rgb(34, 227, 0);
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border:none;
+  border-bottom: 1px solid grey;
+}
+
+input[type='checkbox'] {
+  width: 30px;
+  height: 30px;
 }
