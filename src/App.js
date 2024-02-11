@@ -5,6 +5,7 @@ import Calculator from "./components/Calculator";
 import Todo from "./components/Todo";
 import Form from "./components/Form";
 import {Route, Routes, Link} from 'react-router-dom';
+import Account from "./components/Account";
 
 export const Log = createContext();
 
@@ -17,6 +18,7 @@ function App() {
         <li><Link to='/calc'>Calculator</Link></li>
         <li><Link to='/todo'>Todo</Link></li>
         <li><Link to='/form'>Form</Link></li>
+        <li><Link to='/Account'>Account</Link></li>
       </ul>
       <Routes>
         <Route path="/" element={<Homepage/>}/>
@@ -24,6 +26,7 @@ function App() {
         <Route path="/calc" element={<Calculator/>}/>
         <Route path="/todo" element={<Todo/>}/>
         <Route path="/form" element={<Form/>}/>
+        <Route path="/account" element={<Account/>}/>
       </Routes>
 
     </>

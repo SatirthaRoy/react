@@ -1,6 +1,9 @@
-import {useState } from "react";
+import { useContext, useState } from "react";
+import { data } from "./Account";
 
-function Form () {
+function User () {
+  // use context hook
+  let detail = useContext(data);
   // use state hooks
   const [form,setForm] = useState({name: '', email: '', feedback: ''});
   let disable = ((form.name !== '') && (form.email !== '') && (form.feedback !== '')) ? false : true;
@@ -11,8 +14,10 @@ function Form () {
     setInfo({...form});
     setForm({...form, name: '', email: '', feedback: ''});
   }
+  console.log(detail);
   return <form action="" onSubmit={handleSubmit}>
     <fieldset>
+      <p>User: {detail.name}</p>
       <h2>Feedback form</h2>
       <label htmlFor="name">
         Name: <input type="text" placeholder="Enter name" value={form.name} onChange={e => setForm({...form, name: e.target.value})}/>
@@ -34,4 +39,4 @@ function Form () {
   </form>
 }
 
-export default Form;
+export default User;
