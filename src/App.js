@@ -5,6 +5,7 @@ import Calculator from "./components/Calculator";
 import Todo from "./components/Todo";
 import Form from "./components/Form";
 import {Route, Routes, Link} from 'react-router-dom';
+import UseEffect from "./components/UseEffect";
 import Account from "./components/Account";
 
 export const Log = createContext();
@@ -28,7 +29,7 @@ function App() {
         <Route path="/form" element={<Form/>}/>
         <Route path="/account" element={<Account/>}/>
       </Routes>
-
+      <UseEffect/>
     </>
   );
 }
